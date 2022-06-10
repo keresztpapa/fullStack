@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <h1>TEST</h1>
-      <form action="/" method="post">
-        <input type="text" name="num1" palceholder="first"></input>
-        <input type="text" name="num2" palceholder="second"></input>
-        <button name="bong" type="submit">gomb</button>
-      </form>
-    <footer></footer>
-  </body>
+<html>
+<body>
+
+<canvas id="myCanvas" width="600" height="600" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.moveTo(0,0);
+  ctx.lineTo(600,600);
+  ctx.stroke();
+</script>
+
+</body>
 </html>
