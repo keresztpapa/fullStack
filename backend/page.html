@@ -5,7 +5,6 @@
   <meta charset="UTF-8"/>
   <style>
     body { background-color: lightblue; }
-
     #menu{
       position: relative;
       width: 70%;
@@ -17,7 +16,6 @@
       left: 15%;
       margin-bottom: 50px;
     }
-
     .txt_bubble{
         position: relative;
         width: 70%;
@@ -28,20 +26,27 @@
         border-radius: 25px;
         left: 15%;
     }
-
     .txt_content{
       margin: 10px
+    }
+    #frm{
+      background: lightgreen;
+      text-align: center;
+      position: relative;
+      left: 15%;
+      width: 70%;
+      top: auto;
+      border-radius: 25px;
+      margin-top: 50px;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
   </style>
   <meta name="keywords" content="blog, keresztpapa">
 </head>
 
 <body>
-  <script>
-    alert("asd");
-  </script>
-
-  <p id="menu">Menu like place holder</p>
+  <p id="menu"></p>
   <div class="txt_bubble">
     <h3> Szöveg </h3>
     <p class="txt_content">
@@ -56,6 +61,23 @@
       illud splendide duo cu.
     </p>
   </div>
+
+  <form id="frm">
+    Title: <input type="text" name="blogContent"><br><br>
+    Content:<br><textarea cols="40" rows="5" name="blogTitle"></textarea><br>
+    <input type="button" onclick="myFunction()" value="Submit">
+  </form>
+
+  <script>
+    document.getElementById("menu").innerHTML = "Menu like place holder";
+    const collection = document.getElementsByClassName("txt_content");
+
+    for(let i=0;i<collection.length;i++){
+      collection[i].innerHTML = "asd";
+    }
+
+  </script>
+
 </body>
 
 </html>
